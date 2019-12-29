@@ -14,10 +14,13 @@ $server_arr = $server;
 if (isset($_COOKIE["lang"]))
 {
   $lang = "en";
-  if (!file_exists("map_".$lang.".php") && !file_exists("zone_names_".$lang.".php"))
-  {$lang = $language;}
+  if (!file_exists("map_".$lang.".php") && !file_exists("zone_names_".$lang.".php")) {
+    $lang = $language;
+  }
 }
-else {$lang = $language;}
+else {
+  $lang = $language;
+}
 
 
 $database_encoding = $site_encoding;

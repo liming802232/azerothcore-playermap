@@ -6,7 +6,7 @@ require_once("func.php");
 require_once("map_english.php");
 
 ?>
-<HTML><HEAD><title>Online Playermap by Lasoto</title>
+<HTML><HEAD><title>Online Playermap</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
@@ -78,7 +78,7 @@ body {
     height: 98px;
     width: 200px;
     left: 50%;
-    margin-left: -483px;
+    margin-left: -468px;
     z-index: 101;
     text-align: center;
     clear: none;
@@ -114,12 +114,13 @@ body {
 }
 #server_info {
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 12px;
+    font-size: 20px;
     font-style: italic;
     text-align: center;
     font-weight: bold;
     color: #FFFF99;
     filter: Glow(Color=0, Strength=3);
+    padding-top: 30px;
 }
 #serverstatus {
     visibility: <?php echo $show_status ? 'visible' : 'hidden'?>;
