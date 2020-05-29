@@ -204,9 +204,13 @@ var maps_count = <?php echo count($lang_defs['maps_names']); ?>;
 var maps_array = new Array(<?php echo $maps_for_points ?>);
 var maps_name_array = new Array(<?php echo "'".implode("','", $lang_defs['maps_names'])."'" ?>);
 
-var race_name = {<?php echo "0:''"; foreach($character_race as $id => $race) echo(", ".$id.":'".$race."'"); ?>}
+var race_name = {<?php echo "0:''"; foreach ($character_race as $id => $race) {
+    echo(", ".$id.":'".$race."'");
+} ?>}
 
-var class_name = {<?php echo "0:''"; foreach($character_class as $id => $class) echo(", ".$id.":'".$class."'"); ?>}
+var class_name = {<?php echo "0:''"; foreach ($character_class as $id => $class) {
+    echo(", ".$id.":'".$class."'");
+} ?>}
 
 var instances_x = new Array();
 var instances_y = new Array();

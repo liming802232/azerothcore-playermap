@@ -11,15 +11,13 @@ $realm_id = 1; // Set the realm_id
 
 $server_arr = $server;
 
-if (isset($_COOKIE["lang"]))
-{
-  $lang = "en";
-  if (!file_exists("map_".$lang.".php") && !file_exists("zone_names_".$lang.".php")) {
+if (isset($_COOKIE["lang"])) {
+    $lang = "en";
+    if (!file_exists("map_".$lang.".php") && !file_exists("zone_names_".$lang.".php")) {
+        $lang = $language;
+    }
+} else {
     $lang = $language;
-  }
-}
-else {
-  $lang = $language;
 }
 
 
@@ -63,5 +61,3 @@ $img_base = "img/map/";
 $img_base2 = "img/c_icons/";
 
 $PLAYER_FLAGS       = CHAR_DATA_OFFSET_FLAGS;
-
-?>
