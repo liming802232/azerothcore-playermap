@@ -15,4 +15,4 @@ Done!
 ## Credits
 
 - Dmitry Koterov (original author)
-- Helias (mantainer)
+- Helias (maintainer)
